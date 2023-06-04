@@ -38,7 +38,7 @@ parser.add_argument("--cutoff", help="How similar images will be stored", defaul
 parser.add_argument("--amount", help="How many similar images will be stored", default=5, type=int)
 args = parser.parse_args()
 
-RESULTS_FILE_NAME = 'similarities_results.csv'
+RESULTS_FILE_NAME = '.csv'
 SIMILAR_NAMES_PATH = 'similar_names.pkl'
 SIMILAR_VALUES_PATH = 'similar_values.pkl'
 
@@ -179,7 +179,7 @@ def get_similar_images(image, sim_names, simVals):
         print("'{}' Unknown image".format(image))
 
 # Writes a .csv-file of the similar images and their similarity scores
-# Appneds the lines, so the file has to be cleared/deleted after each run
+# Appends the lines, so the file has to be cleared/deleted after each run
 def write_image_data_to_csv(list_of_dicts):
     with open(RESULTS_FILE_NAME, 'a') as csvfile:
         field_names = ["original_image", "similar_image", "similarity_score"]

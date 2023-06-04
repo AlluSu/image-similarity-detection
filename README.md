@@ -1,12 +1,35 @@
 # Digital Humanities Hackathon 2023, the Early Modern Group  
 
+This repository contains code related to the course *Digital Humanities Hackathon* at University of Helsinki. For more information about the course and the projects can be found [here](https://www.helsinki.fi/en/digital-humanities/helsinki-digital-humanities-hackathon-2023-dhh23) .  
+
+## Instructions for running the code
+
+### The script version *similarities.py*  
+- Make sure you have Python with *pip* installed
+- Clone the repository
+- Run `pip install requirements.txt`
+- Go to folder */code*
+- > usage: similarities.py [-h] --inputpath INPUTPATH [--outputpath OUTPUTPATH] [--method METHOD] [--cutoff CUTOFF] [--amount AMOUNT]
+
+Analyze images how similar they are, and write the results to a .csv file
+
+options:
+  -h, --help            show this help message and exit
+  --inputpath INPUTPATH
+                        Relative path to the folder of the images
+  --outputpath OUTPUTPATH
+                        Relative path to where the results will be stored
+  --method METHOD       Use GPU or CPU for computing
+  --cutoff CUTOFF       How similar images will be stored
+  --amount AMOUNT       How many similar images will be stored
+
+For example: `python3 similarities.py --inputpath="../test-images/math-small" --outputpath="data/results" --method="cpu" --cutoff=0.93 --amount=5` 
+
+### The jupyter notebook version
+
 ## Comparing two images for similarity  
 
-This is a repository for a PoC of a program for comparing two images using image hashing.  
-
 During the DHH23 hackathon, I was assigned the task to analyse the images in the ECCO dataset for similar/identical images, as we were interested to see if some illustrations have provided inspiration for some other authors and have they been reused.  
-
-After doing some research, it seemed that there were few available techniques to do this, which the first one I tried being Image Hashing.  
 
 ### Image Hashing  
 
