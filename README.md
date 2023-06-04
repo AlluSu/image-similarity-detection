@@ -1,6 +1,6 @@
 # Digital Humanities Hackathon 2023, the Early Modern Group  
 
-This repository contains code related to the course *Digital Humanities Hackathon* at University of Helsinki. For more information about the course and the projects can be found [here](https://www.helsinki.fi/en/digital-humanities/helsinki-digital-humanities-hackathon-2023-dhh23) .  
+This repository contains code related to the course *Digital Humanities Hackathon* at University of Helsinki. For more information about the course and the projects can be found [here](https://www.helsinki.fi/en/digital-humanities/helsinki-digital-humanities-hackathon-2023-dhh23).  
 
 ## Instructions for running the code
 
@@ -8,22 +8,22 @@ This repository contains code related to the course *Digital Humanities Hackatho
 - Make sure you have Python with *pip* installed
 - Clone the repository
 - Run `pip install requirements.txt`
-- Go to folder */code*
-- > usage: similarities.py [-h] --inputpath INPUTPATH [--outputpath OUTPUTPATH] [--method METHOD] [--cutoff CUTOFF] [--amount AMOUNT]
+- Go to folder */code*  
+- Usage: similarities.py [-h] --inputpath INPUTPATH [--outputpath OUTPUTPATH] [--method METHOD] [--cutoff CUTOFF] [--amount AMOUNT]
 
-Analyze images how similar they are, and write the results to a .csv file
+> Analyze images how similar they are, and write the results to a .csv file  
+> options:
+>  -h, --help            show this help message and exit
+>  --inputpath INPUTPATH
+>                        Relative path to the folder of the images
+>  --outputpath OUTPUTPATH
+>                        Relative path to where the results will be stored
+>  --method METHOD       Use GPU or CPU for computing
+>  --cutoff CUTOFF       How similar images will be stored
+>  --amount AMOUNT       How many similar images will be stored
 
-options:
-  -h, --help            show this help message and exit
-  --inputpath INPUTPATH
-                        Relative path to the folder of the images
-  --outputpath OUTPUTPATH
-                        Relative path to where the results will be stored
-  --method METHOD       Use GPU or CPU for computing
-  --cutoff CUTOFF       How similar images will be stored
-  --amount AMOUNT       How many similar images will be stored
-
-For example: `python3 similarities.py --inputpath="../test-images/math-small" --outputpath="data/results" --method="cpu" --cutoff=0.93 --amount=5` 
+For example:  
+`python3 similarities.py --inputpath="../test-images/math-small" --outputpath="data/results" --method="cpu" --cutoff=0.93 --amount=5` 
 
 ### The jupyter notebook version
 
