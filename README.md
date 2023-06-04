@@ -9,18 +9,18 @@ This repository contains code related to the course *Digital Humanities Hackatho
 - Clone the repository
 - Run `pip install requirements.txt`
 - Go to folder */code*  
-- Usage: similarities.py [-h] --inputpath INPUTPATH [--outputpath OUTPUTPATH] [--method METHOD] [--cutoff CUTOFF] [--amount AMOUNT]
+- Usage: `similarities.py [-h] --inputpath INPUTPATH [--outputpath OUTPUTPATH] [--method METHOD] [--cutoff CUTOFF] [--amount AMOUNT]`
 
 > Analyze images how similar they are, and write the results to a .csv file  
-> options:
->  -h, --help            show this help message and exit
+> options:  
+>  -h, --help            show this help message and exit  
 >  --inputpath INPUTPATH
->                        Relative path to the folder of the images
+>                        Relative path to the folder of the images  
 >  --outputpath OUTPUTPATH
->                        Relative path to where the results will be stored
->  --method METHOD       Use GPU or CPU for computing
->  --cutoff CUTOFF       How similar images will be stored
->  --amount AMOUNT       How many similar images will be stored
+>                        Relative path to where the results will be stored  
+>  --method METHOD       Use GPU or CPU for computing  
+>  --cutoff CUTOFF       How similar images will be stored  
+>  --amount AMOUNT       How many similar images will be stored  
 
 For example:  
 `python3 similarities.py --inputpath="../test-images/math-small" --outputpath="data/results" --method="cpu" --cutoff=0.93 --amount=5` 
