@@ -15,12 +15,12 @@ This repository contains code related to the course *Digital Humanities Hackatho
 > options:  
 >  -h, --help            show this help message and exit  
 >  --inputpath INPUTPATH
->                        Relative path to the folder of the images  
+>                        Relative path in quotes ("") to the folder of the images, requires  
 >  --outputpath OUTPUTPATH
->                        Relative path to where the results will be stored  
->  --method METHOD       Use GPU or CPU for computing  
->  --cutoff CUTOFF       How similar images will be stored  
->  --amount AMOUNT       How many similar images will be stored  
+>                        Relative path in quotes ("") to where the results will be stored, default is the same directory  
+>  --method METHOD       "GPU" or "CPU" for computing, default is "CPU"  
+>  --cutoff CUTOFF       How similar images will be stored, between 0 to 1, where larger number indicates more similar images. Default is 0.9  
+>  --amount AMOUNT       How many similar images will be stored, default is 5  
 
 For example:  
 `python3 similarities.py --inputpath="../test-images/math-small" --outputpath="data/results" --method="cpu" --cutoff=0.93 --amount=5` 

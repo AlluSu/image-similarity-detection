@@ -34,7 +34,7 @@ parser = argparse.ArgumentParser(description="Analyze images how similar they ar
 parser.add_argument("--inputpath", help="Relative path to the folder of the images", required=True)
 parser.add_argument("--outputpath", help="Relative path to where the results will be stored", default="")
 parser.add_argument("--method", help="Use GPU or CPU for computing", default="CPU")
-parser.add_argument("--cutoff", help="How similar images will be stored", default=0.9, type=float)
+parser.add_argument("--cutoff", help="How similar images will be stored", default=0.9, type=float, choices=range(0,1))
 parser.add_argument("--amount", help="How many similar images will be stored", default=5, type=int)
 args = parser.parse_args()
 
