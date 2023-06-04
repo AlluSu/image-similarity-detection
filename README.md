@@ -9,7 +9,8 @@ This repository contains code related to the course *Digital Humanities Hackatho
 - Clone the repository
 - Run `pip install requirements.txt`
 - Go to folder */code*  
-- Usage: `similarities.py [-h] --inputpath INPUTPATH [--outputpath OUTPUTPATH] [--method METHOD] [--cutoff CUTOFF] [--amount AMOUNT]`
+- Usage:  
+`similarities.py [-h] --inputpath INPUTPATH [--outputpath OUTPUTPATH] [--method METHOD] [--cutoff CUTOFF] [--amount AMOUNT]`
 
 > Analyze images how similar they are, and write the results to a .csv file  
 > options:  
