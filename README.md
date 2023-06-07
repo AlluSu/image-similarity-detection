@@ -35,5 +35,5 @@ For example:
 
 ## Image Similarity Detection techniques  
 
-You can read more about the research and techniques related to detecting similar images from this [report](/code/DHH23-report.pdf)  
+You can read more about the research and techniques related to detecting similar images from this [report](https://github.com/AlluSu/image-similarity-detection/blob/main/code/DHH23-report.pdf)  
 
