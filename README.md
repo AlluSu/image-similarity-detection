@@ -33,6 +33,9 @@ For example:
 - Go to folder */code*
 - Run `jupyter-notebook` and the Jupyter environment should open automatically in your local browser  
 
+## Data  
+Test data containing scientifical botanical illustrations/images from 18th century books can be found from [here](https://github.com/dhh23/early_modern_data). Suggest using *Git LFS* for cloning it. Extract the .zip-file to location of your choice and set the paths correct for the code to work appropriately.  
+
 ## Image Similarity Detection techniques  
 
 You can read more about the research and techniques related to detecting similar images from this [report](https://github.com/AlluSu/image-similarity-detection/blob/main/report/DHH23-report.pdf)  
