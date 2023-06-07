@@ -33,3 +33,7 @@ For example:
 - Go to folder */code*
 - Run `jupyter-notebook` and the Jupyter environment should open automatically in your local browser  
 
+## Image Similarity Detection techniques  
+
+You can read more about the research and techniques related to detecting similar images from this [report](/code/DHH23-report.pdf)  
+
